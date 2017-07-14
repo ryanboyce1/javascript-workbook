@@ -33,14 +33,14 @@ function generateHint() {
 }
 
 function mastermind(guess) {
-  solution = 'abcd'; // Comment this out to generate a random solution
+  // solution = 'abcd'; // uncomment this when developing
   // your code here
 }
 
 
 function getPrompt() {
   rl.question('guess: ', (guess) => {
-    mastermind(guess);
+    console.log( mastermind(guess) );
     printBoard();
     getPrompt();
   });
